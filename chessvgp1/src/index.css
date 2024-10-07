@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  align-items: center;
+  background-color: rgb(187, 187, 187);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.chessBoard{
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  margin-top: 100px;
+
+}
+.blackSquare{
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  position: relative;
+
+}
+
+.whiteSquare{
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  position: relative;
+}
+
+.blockTextBlackNUM{
+  margin: 0;
+  padding: 0;
+  color: black;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+    padding: 0;
+}
+
+.blockTextWhiteNUM{
+  margin: 0;
+  padding: 0;
+  color: white;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  
+}
+
+
+.blockTextWhiteLET
+{
+  margin: 0;
+  padding: 0;
+  color: white;
+  position: absolute;
+  bottom: 5px;
+  right: 7px;
+  font-size: 18px;
+  font-weight: 600;
+  
+}
+
+.blockTextBlackLET
+{
+  margin: 0;
+  padding: 0;
+  color: black;
+  position: absolute;
+  bottom: 5px;
+  right: 7px;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+    padding: 0;
+}
