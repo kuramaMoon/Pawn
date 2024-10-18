@@ -1,0 +1,22 @@
+#app canvas {
+    display: block;
+    position: fixed;
+    z-index: 9999; /* High value to ensure it stays on top */
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Ensures the canvas doesn't interfere with clicks */
+}
+
+#app {
+    background-color: aliceblue;
+    color: red;
+    position: relative;
+    z-index: 1; /* Main content stays below the canvas but visible */
+    width: 100%;
+    height: 100%;
+}
+
+header, main, footer {
+    position: relative;
+    z-index: 10; /* Ensures content is visible above app but below canvas */
+}

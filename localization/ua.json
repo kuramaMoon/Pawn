@@ -1,0 +1,29 @@
+{
+    "title": "Домашня Сторінка",
+    "header": {
+        "home": "Головна",
+        "play": "Грати",
+        "train": "Тренування",
+        "lessons": "Уроки",
+        "search": "Пошук",
+        "friends": "Друзі",
+        "account": "Акаунт"
+    },
+    "lobby": {
+        "history": "Історія",
+        "play": "Грати",
+        "puzzles": "Задачі",
+        "gameReview": "Огляд гри",
+        "learning": "Навчання"
+    },
+    "footer": {
+        "support": "Підтримка",
+        "language": "Мова",
+        "about": "Про нас",
+        "links": "Посилання...",
+        "languageOptions": [
+            {"langCode": "en", "label": "English"},
+            {"langCode": "ua", "label": "Українська"}
+        ]
+    }
+}
