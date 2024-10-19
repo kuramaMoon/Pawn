@@ -1,15 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     loadLocalization('en');
 
-    /*const languageOptions = document.querySelectorAll('.dropdown li');
-    languageOptions.forEach(option => {
-        option.addEventListener('click', (event) => {
-            const langCode = event.target.getAttribute('data-lang');
-            console.log(`Language selected: ${langCode}`); 
-            loadLocalization(langCode); 
-        });
-    });*/
-
     const languageOptions = document.querySelectorAll('#language-switcher .dropdown li');
     languageOptions.forEach(option => {
         option.addEventListener('click', (event) => {
@@ -18,12 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
             loadLocalization(langCode); 
         });
     });
-
 });
 
 function loadLocalization(langCode) {
     console.log(`Loading localization for: ${langCode}`);
-    fetch(`/localization/${langCode}.json`)
+    fetch(`${langCode}.json`)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
