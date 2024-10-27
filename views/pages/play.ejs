@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/play-page.css">
+    <title>HomePage</title>
+    <script src="/localization-scripts/languageSwitcher.js"></script>
+</head>
+<body> 
+
+    <%- include('../partials/header.ejs') %> 
+
+    <main>
+        <div class="lobby">
+            <section class="game-history">
+                <h2>History</h2>
+            </section>
+            <div class="mid-container">
+                    <div class="board"></div>
+            </div>
+            <div class="right-container">
+                <div class="bot-img-container">
+                    <img src="#" alt="Bot Img" class="bot-img">
+                </div>
+                <div class="grid-row">
+                    <div class="play-item">Sett</div>
+                    <div class="play-item">Sett</div>
+                    <div class="play-item">Sett</div>
+                </div>
+                <div class="bot-text">Nice to meet you !!!</div>
+            </div>    
+        </div>
+        
+    </main>
+    <%- include('../partials/footer.ejs') %> 
+</body> 
+</html>

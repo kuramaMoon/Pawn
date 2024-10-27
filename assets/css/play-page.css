@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+
+html {
+    font-family: "Merriweather", serif !important;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+/*-----------------HEADER-----------------*/
+
+header{
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0; 
+    background-color: #8d8680; 
+    color: #000000;  
+}
+
+.flex-container {
+    display: flex;
+   /* justify-content:space-around;*/
+    align-items: center;
+    padding: 10px 50px; 
+    background-color: #8d8680; 
+    color: #000000; 
+}
+
+
+#logo {
+    height: 50px; 
+    width: auto;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+nav ul, .nav-item ul {
+    list-style: none; 
+    display: flex;
+    gap: 30px; 
+}
+
+nav ul li, .nav-item ul li {
+    font-size: 18px; 
+    cursor: pointer;
+    position: relative;
+    padding: 10px 0; 
+    transition: color 0.3s ease;
+}
+
+
+nav ul li:hover, .nav-item ul li:hover {
+    color: #f0a500;
+}
+
+
+nav ul li::after, .nav-item ul li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #f0a500; 
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav ul li:hover::after, .nav-item ul li:hover::after {
+    transform: scaleX(1); 
+}
+
+
+/*@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+}*/
+
+@media (prefers-reduced-motion: no-preference) and (min-height: 600px) {
+    body>header {
+        max-width: unset;
+        top: 0;
+        width: 100%;
+        padding: 0 var(---site-header-sticky-padding);
+        border-bottom: 1px solid rgba(0, 0, 0, 0);
+        transition: transform 150ms ease-in-out, border-color 150ms ease-in-out;
+    }
+}
+
+/*-----------------MAIN-----------------*/
+
+main {
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5dc; 
+    background-image: repeating-linear-gradient(
+        0deg,                  
+        rgba(139, 69, 19, 0.1), 
+        rgba(139, 69, 19, 0.1) 1px,
+        rgba(245, 222, 179, 0.1) 1px,
+        rgba(245, 222, 179, 0.1) 5px
+    );
+}
+
+.lobby {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px 50px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.game-history {
+    flex: 1; 
+    background-color: #8d8680;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    min-width: 250px;
+}
+
+.mid-container {
+    background-color: #8d8680;
+    height: 560px;
+    width: 560px;
+    margin: 0 20px;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    flex: 3; 
+    gap: 20px;
+}
+
+.bot-img-container {
+    display: flex; 
+    justify-content:end;
+}
+.bot-img {
+    height: 220px;
+    width: 180px;
+    background-color: #8d8680;
+}
+
+.play-item {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    background-color: #8d8680;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.bot-text {
+    width: 250px;
+    padding: 10px;
+    background-color: #d0c6bd;
+    border: 5px solid #8d8680;
+    border-style: double;
+    border-radius: 2%;
+}
+
+.grid-row {
+    display: flex;
+    justify-content:end;
+    gap: 20px;
+}
+
+.play-item:hover {
+    color: #f0a500;
+}
+
+.play-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #f0a500; 
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.play-item:hover::after {
+    transform: scaleX(1); 
+}
+
+/*-----------------FOOTER-----------------*/
+.footer {
+    display: flex;
+    width: 100%;
+}
+
+.footer ul {
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+    list-style: none; 
+    display: flex;
+    gap: 30px; 
+}
+
+.footer ul li {
+    font-size: 18px; 
+    cursor: pointer;
+    position: relative;
+    padding: 10px 0; 
+    transition: color 0.3s ease;
+    color: #b5a642;
+}
+
+
+.footer ul li:hover {
+    color: #f0a500;
+}
+
+
+.footer ul li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #f0a500; 
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.footer ul li:hover::after {
+    transform: scaleX(1); 
+}
+
+#language-switcher {
+    position: relative;
+    cursor: pointer;
+}
+
+#language-switcher .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #8d8680;
+    padding: 10px;
+    list-style: none;
+    top: -200%;
+    left: 0;
+    z-index: 100;
+    min-width: 110px;
+    overflow: hidden;
+}
+
+#language-switcher:hover .dropdown {
+    display: block;
+}
+
+#language-switcher .dropdown li {
+    padding: 5px 10px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+#language-switcher .dropdown li:hover {
+    background-color: #f0a500;
+    min-width: 110px;
+    color: white;
+}
+
+/*-----------------APP-----------------*/
+#app{
+    margin: 0;
+    width: 100%;
+    height:100%;
+}
+#app{
+    overflow: hidden;
+    touch-action: pan-up;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0 0 5px #ffffff,0 0 20px #000,0 0 30px #000;
+    }
+    #app canvas{
+        display: block;
+        position: fixed;
+        z-index: -1;
+        top: 0;
+    }
+    

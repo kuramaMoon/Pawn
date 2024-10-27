@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home-page.css">
+    <title>HomePage</title>
+    <script src="/localization-scripts/languageSwitcher.js"></script>
+</head>
+
+<body>
+<%- include('../partials/header.ejs') %>
+
+<main>
+    <div class="lobby">
+        <section class="history">
+            <h2>History</h2>
+        </section>
+        <div class="right-container">
+            <div class="grid-row">
+                <div class="grid-item"> 
+                    <div class="icon">icon</div>
+                    <div class="board-img"><img class="board-game" src="/images/board-game-1.jpg" alt="board-game-1"></div>
+                    <div class="content">Play</div>
+                </div>
+                <div class="grid-item"> 
+                    <div class="icon">icon</div>
+                    <div class="board-img"><img class="board-game" src="/images/board-game-1.jpg" alt="board-game-2"></div>
+                    <div class="content">Puzzles</div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-item"> 
+                    <div class="icon">icon</div>
+                    <div class="board-img"><img class="board-game" src="/images/board-game-1.jpg" alt="board-game-3"></div>
+                    <div class="content">Game Review</div>
+                </div>
+                <div class="grid-item"> 
+                    <div class="icon">icon</div>
+                    <div class="board-img"><img class="board-game" src="/images/board-game-1.jpg" alt="board-game-4"></div>
+                    <div class="content">Learning</div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <section class="footer">
+                    <ul>
+                        <li class="footer-item">Support</li>
+                        <li> • </li>
+                        <li class="footer-item" id="language-switcher">
+                            Language
+                            <ul class="dropdown">
+                                <li data-lang="en">English</li>
+                                <li data-lang="ua">Українська</li>
+                            </ul>
+                        </li>
+                        <li> • </li>
+                        <li class="footer-item">About</li>
+                        <li> • </li>
+                        <li class="footer-item">links...</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
