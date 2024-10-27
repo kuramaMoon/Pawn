@@ -1,0 +1,29 @@
+{
+    "title": "Home Page",
+    "header": {
+        "home": "Home",
+        "play": "Play",
+        "train": "Training",
+        "lessons": "Lessons",
+        "search": "Search",
+        "friends": "Friends",
+        "account": "Account"
+    },
+    "lobby": {
+        "history": "History",
+        "play": "Play",
+        "puzzles": "Puzzles",
+        "gameReview": "Game Review",
+        "learning": "Learning"
+    },
+    "footer": {
+        "support": "Support",
+        "language": "Language",
+        "about": "About",
+        "links": "Links...",
+        "languageOptions": [
+            {"langCode": "en", "label": "English"},
+            {"langCode": "ua", "label": "Українська"}
+        ]
+    }
+}
